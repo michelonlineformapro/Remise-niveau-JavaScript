@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+    <title>Remise à niveau Js</title>
+  </head>
+  <body>
+    <div class="container">
+
+        <h2 class="text-center text-danger">Ecrire une variable et l'afficher</h2>
+        <div class="text-center">
+        <button onclick="getVar()" class="btn btn-danger">Afficher une variable</button>
+        </div>
+
+        <h2 class="text-center text-danger">Ecrire des opérations sur des variables et afficher le résultat</h2>
+        <p class="text-center">Une addition, une soustraction, une multiplication et une division</p>
+        
+        <div class="text-center">
+        <button onclick="getOperations()" class="btn btn-success">Afficher les resultats des 4 opérations</button>
+        </div>
+
+        <h2 class="text-center text-danger">Changer de l'HTML</h2>
+        <p id="text-to-change" class="text-center">Récupérer un id (ou classe) et modifier le contenu</p>
+        
+        <div class="text-center">
+        <button onclick="changeText()" class="btn btn-primary">Changer le texte</button>
+        </div>
+
+
+        <h2 class="text-center text-danger">Changer le CSS</h2>
+        <p id="color-to-change" class="text-center">Récupérer un id (ou classe) et modifier le visuel</p>
+        
+        <div class="text-center">
+        <button onclick="changeStyle()" class="btn btn-danger">Changer le texte</button>
+        </div>
+
+        <h2 class="text-center text-danger">Entrer votre age (Condition : if else)</h2>
+        <p class="text-center">Vérifier que le champs est rempli</p>
+        <div class="form-group">
+          <label for="age">Votre age</label>
+          <input class="form-control" id="age" type="text" name="player_age" placeholder="Votre age" />
+        </div>
+        <div class="text-center">
+        <button onclick="getAge()" class="btn btn-warning">Afficher la condition</button>
+        </div>
+
+        <h2 class="text-center text-danger">Ecrire une boucle</h2>
+        <p class="text-center">Afficher chaque lettre de votre prénom dans une alerte</p>
+        <div class="text-center">
+        <button onclick="getLoop()" class="btn btn-info">Afficher la boucle</button>
+        </div>
+
+
+        <h2 class="text-center text-danger">Ecrire une boucle avec While</h2>
+        <p class="text-center">Afficher 10 fois votre prénom dans une alerte</p>
+        <div class="text-center">
+        <button onclick="whileLoop()" class="btn btn-danger">Afficher la boucle While</button>
+        </div>
+
+        <h2 class="text-center text-danger">Créer un Switch Case </h2>
+        <p class="text-center">Votre variable vaut 2 donc on affiche le cas 2</p>
+        <div class="text-center">
+        <button onclick="addSwitchCase()" class="btn btn-success">Afficher le cas 2</button>
+        </div>
+
+        <h2 class="text-center text-danger">Ecrire un objet et afficher ses valeurs</h2>
+        <p class="text-center">Rappel un objet est un element avec de multiple données</p>
+        <div class="text-center">
+        <button onclick="showObject()" class="btn btn-warning">Afficher les valeur d'un objet</button>
+        </div>
+
+        <h2 class="text-center text-danger">Récuperer un élément d'un tableau</h2>
+        <p class="text-center">Rappel : un tableau commence par l'index 0</p>
+        <p class="text-center">Récuperé le 3ieme element d'un tableau</p>
+        <div class="text-center">
+        <button onclick="showArray()" class="btn btn-info">Afficher une valeur d'un tableau</button>
+        </div>
+
+        <h2 class="text-center text-danger">Ajouter un élément à un tableau</h2>
+        <p class="text-center">Afficher le tableau avec l'élément "JE SUIS AJOUTER"</p>
+        <div class="text-center">
+        <button onclick="addInArray()" class="btn btn-success">Ajouter une valeur à un tableau</button>
+        </div>
+
+
+        <h2 class="text-center text-danger">Créer une classe et ajouter + afficher  une entrée </h2>
+        <p class="text-center">Une classe à souvent une methode constructor pour initialiser ses composants</p>
+        <div class="text-center">
+          <p id="demo"></p>
+
+          <script>
+          class Voiture {
+            constructor(nom, annee) {
+              this.nom = nom;
+              this.annee = annee;
+            }
+          }
+          
+          maVoiture = new Voiture("Ford", 2014);
+          document.getElementById("demo").innerHTML = "<b>La classe voiture donne le nom : </b>" +
+          maVoiture.nom + " <b>et l'année :</b> " + maVoiture.annee;
+          </script>
+        </div>
+
+
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- APPEL DU FICHIER JAVASCRIPT-->
+    <script type="text/javascript" src="js/main.js"></script>
+
+  
+  </body>
+</html>
